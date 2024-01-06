@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness with Babu</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+  <script src="https://kit.fontawesome.com/96dce8649f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">BMF</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+
+          <li>
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">Specialist In</strong>Power Lifting
+            </p>
+
+            <h1 class="h1 hero-title">Fitness With Babu</h1>
+
+            <p class="section-text">
+              Hi, I'm Babu, your buddy trainer at Mojo Fitness. Check out my portfolio and join me in the world of fitness.
+            </p>
+
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="760" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+           
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png"  loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Me</p>
+
+            <h2 class="h2 section-title">Welcome To Fitness With Babu</h2>
+
+            <p class="section-text">
+              Hey there! I'm Babu, your go-to fitness buddy and master trainer at Mojo Fitness. With a passion for fitness, I bring over <b>20 years </b> of expertise and motivation to make your fitness journey enjoyable and effective.
+
+<b>Specializing in Powerlifting and Weightlifting for both men and women </b>, we offer <b>personalized training sessions tailored to the individual client</b>, as well as regular training sessions for others. <br> While most gyms focus on strength and lifting classes, we go beyond that by providing a diverse range of options,<b> including Yoga, Zumba, Functional Training, Group classes, and more.</b>
+
+At Mojo Fitness, we believe in making a healthy lifestyle accessible to everyone. That's why we offer <b>gym memberships at an incredibly affordable price </b>. Join us on the path to the healthiest version of yourself, where fitness meets fun!
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">Partha</h3>
+                  <p class="coach-title">Our Morning Trainer</p>
+                  <li>
+                    <a href="https://www.instagram.com/parthas_fitness?igsh=MWVoMnY0MHNtc2Q2OA==" class="social-link1">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Watch My Interview!!</h2>
+            <a href="https://youtu.be/I2l-AkaiJa4?feature=shared" class="btn-link has-before" target="_blank">
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+          </a>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">My Classes & Achievements</p>
+
+          <h2 class="h2 section-title text-center">Fitness Classes For Every Goal</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://youtube.com/shorts/PB5Mj66saxQ?si=vN9sNp7U1GxVCJ2S" class="card-title" target="_blank">Weight Lifting</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Unlock your full strength potential with my top-tier weightlifting and powerlifting classes. Elevate your fitness journey with precision and power.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://www.youtube.com/watch?v=0IYJVU_tf3A"class="card-title" target="_blank">Cardio & Strength</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Maximize your cardio and strength with my dynamic classes. Achieve fitness goals efficiently. Let's sculpt a stronger you – one session at a time!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://www.youtube.com/shorts/8QHzoISvKmE" class="card-title" target="_blank">Power Yoga</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Revitalize with Power Yoga. Elevate strength, balance, and mindfulness. Join for a transformative experience – flow to a healthier you!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://www.youtube.com/watch?v=ScQ4Z3zjXvY" target="_blank" class="card-title">The Fitness Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Unlock complete fitness with my exclusive pack – free exercise classes, invigorating Zumba, and core workouts. Join now for a healthier, vibrant you!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-5.jpeg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" width="52px" height="" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://youtu.be/Wm50WRlcCjg?si=HZxurRCuJLxU8RSh" class="card-title" target="_blank">Kids Training</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Energize your kids with fun fitness. Join for engaging sessions that blend play and exercise. Foster a healthy, active lifestyle today!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-6.jpeg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://youtube.com/shorts/78MenMcdSD4?si=zTI3I8vfwF8HZ21R" class="card-title" target="_blank">Powerlifting</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Empower our Women and Men through powerlifting. Join for strength, confidence, and a supportive community. Unleash your power!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-7.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://youtu.be/hgqrGpWbkhA?si=kY_B6vr3Tx3zNF2A" class="card-title" target="_blank">Funtional Training</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Transform your fitness with functional training. Join for dynamic workouts that enhance everyday movements. Elevate your strength, agility, overall wellbeing. 
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-8.jpeg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://www.facebook.com/100009628353853/videos/632225767108363/?mibextid=Nif5oz" class="card-title" target="_blank">National Powerlifting Championship 2018</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    National Powerlifting Champions 2018, showcasing Power, dedication and strength. 
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-9.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="https://www.youtube.com/watch?v=ScQ4Z3zjXvY" class="card-title" target="_blank">Zumba</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Energize your workout with Zumba - a vibrant fusion of dance and fitness. Join the rhythm, boost your mood, and sculpt a healthier you. Let's Zumba together!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="section footer-top bg-light has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+            <span class="span">BMF</span>
+          </a>
+
+          <p class="footer-brand-text">
+            Check My Social Links and Contact me to get the Best Fitness for all ages!!            
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Saturday</p>
+
+                <p>5:30Am - 9:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Sunday</p>
+
+                <p>8:00Am - 12:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Me</a>
+          </li>
+
+          <li>
+            <a href="#class" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              No.B-46, 70ft Road, Periyar Nagar,
+Chennai, Tamil Nadu 600082
+India
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+919677125705" class="footer-link">+91 9677125705</a>
+            </div>
+          </li>
+
+          
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/people/Mohan-Babu/pfbid0z4n9iAoWF68xRrbCvZMyFScr4tBNVRFaTwJPxJ3iWMggB8nSqFv8aFUF4K8tV9KBl/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/mohanbabu3995?igsh=MXc1eWd6MHlodm9ubw==" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@CharukeshSB" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+          </li>
+
+           
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container"></div>
+
+        <p class="copyright">
+          &copy; 2023 BMF. Developed by <a href="https://innotechtitans.pythonanywhere.com/" target="_blank" id="Inno"> InnoTech Titans </a> 
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
