@@ -1030,6 +1030,11 @@ body {
     column-gap: 25px;
   }
 
+  .address-footer-link{
+    height: fit-content;
+    width: 300px;
+  }
+
 }
 
 
@@ -1096,6 +1101,11 @@ body {
 
   .footer-bottom-list { margin-block-start: 0; }
 
+}
+
+.address-footer-link{
+  height: fit-content;
+  width: 300px;
 }
 
 
@@ -1253,6 +1263,11 @@ body {
     column-gap: 50px;
   }
 
+  .address-footer-link{
+    height: fit-content;
+    width: 300px;
+  }
+
 }
 
 
@@ -1364,4 +1379,9 @@ body {
 
   .footer-top .container { grid-template-columns: 1fr 0.6fr 0.9fr 1fr; }
 
+}
+
+.address-footer-link{
+  height: fit-content;
+  width: 300px;
 }
