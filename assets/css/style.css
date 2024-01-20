@@ -780,7 +780,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  /* gap: 10px; */
+
 }
 
 .footer-list-item .icon {
@@ -901,7 +902,7 @@ body {
 .back-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 30px;
   background-color: var(--coquelicot);
   color: var(--rich-black-fogra-29-1);
   font-size: 20px;
@@ -1035,7 +1036,8 @@ body {
 
   .address-footer-link{
     height: fit-content;
-    width: 300px;
+    width: 200px;
+
   }
 
   @media only screen and (max-width: 500px) {
@@ -1115,6 +1117,7 @@ body {
 .address-footer-link{
   height: fit-content;
   width: 300px;
+  display: inline;
 }
 
 
