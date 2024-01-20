@@ -932,47 +932,84 @@ body {
 /**
  * responsive for larger than 575px screen
  */
+ @media (min-width: 575px) {
 
+  :root {
+    --fs-1: 5.8rem;
+    --fs-2: 4rem;
+  }
 
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
 
+  .hero-subtitle,
+  .section-subtitle { font-size: var(--fs-5); }
 
+  .header .container {
+    max-width: unset;
+    padding-inline: 30px;
+  }
 
+  .hero-content { padding-inline: 40px; }
 
-/**
- * responsive for larger than 768px screen
- */
+  .hero-subtitle .strong { padding-block: 6px; }
+
+  .hero::after { height: 340px; }
+
+  .abs-img-1 {
+    top: 130px;
+    right: -10px;
+    width: 230px;
+  }
+
+  .abs-img-2 {
+    bottom: 20px;
+    left: -40px;
+    width: 310px;
+  }
+
+  .about .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-coach { margin-block-end: 0; }
+
+  .video-card .card-title { --fs-3: 3.5rem; }
+
+  .footer-top .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
+
+  .address-footer-link {
+    height: fit-content;
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    div[style*="max-width:100%"] {
+      width: 100% !important;
+    }
+  }
+}
 
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-2: 4.5rem;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 720px; }
+  .container {
+    max-width: 720px;
+  }
 
   .scrollbar-item { min-width: calc(50% - 12.5px); }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero-banner {
     max-width: max-content;
@@ -984,12 +1021,6 @@ body {
     right: 50px;
   }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-bottom .container {
     display: flex;
     justify-content: space-between;
@@ -998,36 +1029,19 @@ body {
 
   .footer-bottom-list { margin-block-start: 0; }
 
+  .address-footer-link {
+    height: fit-content;
+    width: 300px;
+    display: inline;
+  }
 }
-
-.address-footer-link{
-  height: fit-content;
-  width: 300px;
-  display: inline;
-}
-
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
 
 @media (min-width: 992px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container,
-  .header .container { max-width: 960px; }
-
-  
-
-  /**
-   * HEADER
-   */
+  .header .container {
+    max-width: 960px;
+  }
 
   .nav-open-btn,
   .nav-close-btn { display: none; }
@@ -1089,12 +1103,6 @@ body {
 
   .header.active .btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29-1); }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero {
     background-size: contain;
     text-align: left;
@@ -1133,12 +1141,6 @@ body {
     right: 0;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1150,27 +1152,16 @@ body {
 
   .about .wrapper { gap: 30px; }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-top .container {
     grid-template-columns: 0.85fr 0.5fr 1fr 0.85fr;
     column-gap: 50px;
   }
 
-  .address-footer-link{
+  .address-footer-link {
     height: fit-content;
     width: 300px;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
