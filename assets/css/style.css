@@ -814,6 +814,9 @@ body {
   padding-inline: 12px;
 }
 
+#my-map-canvas img.text-marker { max-width: none!important; background: none!important; }
+    img { max-width: none; } 
+
 .footer-form .btn-primary:is(:hover, :focus) {
   background-color: var(--rich-black-fogra-29-1);
   color: var(--white);
@@ -1033,6 +1036,12 @@ body {
   .address-footer-link{
     height: fit-content;
     width: 300px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    div[style*="max-width:100%"] {
+      width: 100% !important;
+    }
   }
 
 }
